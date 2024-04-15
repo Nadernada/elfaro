@@ -15,21 +15,6 @@
 }
 
 
-/*** Spinner ***/
-#spinner {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 3s ease-out, visibility 0s linear 3s;
-    z-index: 99999;
-}
-
-#spinner.show {
-    transition: opacity 3s ease-out, visibility 0s linear 0s;
-    visibility: visible;
-    opacity: 1;
-}
-
-
 /*** Button ***/
 .btn {
     font-weight: 500;
@@ -458,6 +443,20 @@
 
 
 
+/*** Spinner ***/
+#spinner {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 10s ease-in, visibility 0s ease-out 5s;
+  z-index: 99999;
+}
+
+#spinner.show {
+  transition: opacity 6s ease-in, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+
 
 .lighthouse {
   margin: auto;
@@ -465,6 +464,7 @@
   width: 16.4em;
   height: 31.2em;
   perspective: 30em;
+  scale: 0.5;
 }
 
 .lighthouse div {
@@ -475,18 +475,18 @@
   background: rgba(0, 0, 10, 0.15);
   width: 20%;
   height: 100%;
-  z-index: 1;
+  z-index: 1999;
 }
 
 .light-ray {
-  animation: lightRay 3s 0s cubic-bezier(0.8, 0.2, 0.2, 0.8) infinite running;
+  animation: lightRay 6s 0s cubic-bezier(0.8, 0.2, 0.2, 0.8) infinite running;
   background: linear-gradient(90deg, #ffff5c, rgba(255, 255, 92, 0));
   top: 3.3em;
   left: 8em;
   width: 14em;
   height: 1.5em;
   transform-origin: 0% 50%;
-  z-index: 6;
+  z-index: 6999;
 }
 
 .roof-tip {
@@ -495,7 +495,7 @@
   left: 7.5em;
   width: 1em;
   height: 1em;
-  z-index: 1;
+  z-index: 1999;
 }
 
 .roof {
@@ -525,7 +525,7 @@
 }
 
 .light {
-  animation: light 3s 0s cubic-bezier(0.8, 0.2, 0.2, 0.8) infinite running;
+  animation: light 6s 0s cubic-bezier(0.8, 0.2, 0.2, 0.8) infinite running;
   background: #ffff5c;
   border-radius: 50%;
   top: 0.6em;
@@ -545,7 +545,7 @@
   left: 5.1em;
   width: 5.7em;
   height: 1.5em;
-  z-index: 1;
+  z-index: 1999;
 }
 
 .upper-neck {
@@ -555,7 +555,7 @@
   left: 5em;
   width: 6em;
   height: 2.2em;
-  z-index: 2;
+  z-index: 2999;
 }
 
 .bottom-rail {
@@ -565,7 +565,7 @@
   left: 4.2em;
   width: 7.6em;
   height: 2em;
-  z-index: 4;
+  z-index: 4999;
 }
 
 .lower-neck {
@@ -575,7 +575,7 @@
   left: 4em;
   width: 8em;
   height: 2.5em;
-  z-index: 5;
+  z-index: 5999;
 }
 
 .stem {
@@ -587,15 +587,15 @@
   width: 9.2em;
   transform: rotateX(30deg);
   transform-origin: 50% 100%;
-  z-index: 6;
+  z-index: 6999;
 }
 
 .window1, .window2, .door {
-  z-index: 1;
+  z-index: 1999;
 }
 
 .window1, .window2 {
-  animation: windows 3s 0s cubic-bezier(0.8, 0.2, 0.2, 0.8) infinite running;
+  animation: windows 6s 0s cubic-bezier(0.8, 0.2, 0.2, 0.8) infinite running;
   border-radius: 50%;
   left: 3.7em;
   width: 2.5em;
@@ -613,7 +613,7 @@
 }
 
 .door {
-  animation: door 3s 0s cubic-bezier(0.8, 0.2, 0.2, 0.8) infinite running;
+  animation: door 6s 0s cubic-bezier(0.8, 0.2, 0.2, 0.8) infinite running;
   background: #222;
   border-radius: 1em 1em 0 0;
   box-shadow: -0.3em 0 0 0 #9f0000 inset;
@@ -624,8 +624,8 @@
 }
 
 .stem-texture {
-  animation: texture 3s 0s cubic-bezier(0.8, 0.2, 0.2, 0.8) infinite running;
-  background: radial-gradient(13em 5.9em at 100% 28.9em, white 49.9%, rgba(255, 255, 255, 0) 50%) 0 0/8em 100%, radial-gradient(21em 14.8em at 100% 100%, #d20000 49.9%, rgba(210, 0, 0, 0) 50%) 0 0/8em 100%, radial-gradient(27em 26.7em at 100% 100%, white 49.9%, rgba(255, 255, 255, 0) 50%) 0 0/8em 100%, radial-gradient(35em 38.9em at 100% 100%, #d20000 49.9%, rgba(210, 0, 0, 0) 50%) 0 0/8em 100%, radial-gradient(39em 50.8em at 100% 100%, white 49.9%, #d20000 50%) 0 0/8em 100%, linear-gradient(180deg, #d20000 2em, white 2em, white 8em, #d20000 8em, #d20000 14em, white 14em, white 20em, #d20000 20em, #d20000 26em, white 26em) 8em 0/4em 100%, radial-gradient(6em 3.9em at 0 0, #d20000 49.9%, rgba(210, 0, 0, 0) 50%) 12em 0/8em 100%, radial-gradient(13em 15.8em at 0 0, white 49.9%, rgba(255, 255, 255, 0) 50%) 12em 0/8em 100%, radial-gradient(18em 27.9em at 0 0, #d20000 49.9%, rgba(210, 0, 0, 0) 50%) 12em 0/8em 100%, radial-gradient(18em 39.9em at 0 0, white 49.9%, rgba(255, 255, 255, 0) 50%) 12em 0/8em 100%, radial-gradient(18em 51.9em at 0 0, #d20000 49.9%, white 50%) 12em 0/8em 100%;
+  animation: texture 6s 0s cubic-bezier(0.8, 0.2, 0.2, 0.8) infinite running;
+  background: radial-gradient(13em 5.9em at 100% 28.9em, white 49.9%, rgba(255, 255, 255, 0) 50%) 0 0/8em 100%, radial-gradient(21em 14.8em at 100% 100%, #126 49.9%, rgba(210, 0, 0, 0) 50%) 0 0/8em 100%, radial-gradient(27em 26.7em at 100% 100%, white 49.9%, rgba(255, 255, 255, 0) 50%) 0 0/8em 100%, radial-gradient(35em 38.9em at 100% 100%, #126 49.9%, rgba(210, 0, 0, 0) 50%) 0 0/8em 100%, radial-gradient(39em 50.8em at 100% 100%, white 49.9%, #126 50%) 0 0/8em 100%, linear-gradient(180deg, #126 2em, white 2em, white 8em, #126 8em, #126 14em, white 14em, white 20em, #126 20em, #126 26em, white 26em) 8em 0/4em 100%, radial-gradient(6em 3.9em at 0 0, #126 49.9%, rgba(210, 0, 0, 0) 50%) 12em 0/8em 100%, radial-gradient(13em 15.8em at 0 0, white 49.9%, rgba(255, 255, 255, 0) 50%) 12em 0/8em 100%, radial-gradient(18em 27.9em at 0 0, #126 49.9%, rgba(210, 0, 0, 0) 50%) 12em 0/8em 100%, radial-gradient(18em 39.9em at 0 0, white 49.9%, rgba(255, 255, 255, 0) 50%) 12em 0/8em 100%, radial-gradient(18em 51.9em at 0 0, #126 49.9%, white 50%) 12em 0/8em 100%;
   background-repeat: no-repeat;
   width: 14em;
   height: 100%;
@@ -640,7 +640,7 @@
   border-radius: 50%;
   top: 27.2em;
   height: 2.8em;
-  z-index: 1;
+  z-index: 1999;
 }
 
 .base-bottom {
@@ -648,7 +648,7 @@
   border-radius: 0 0 50% 50%;
   top: 28.5em;
   height: 2.6em;
-  z-index: 0;
+  z-index: 999;
 }
 
 @keyframes lightRay {

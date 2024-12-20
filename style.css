@@ -208,6 +208,10 @@ body {
   z-index: 0;
 }
 
+.psych-img {
+  aspect-ratio: 1/1;
+}
+
 @keyframes lightRay {
   from, to {
     transform: rotateY(0deg) translate(2.4em, 0) rotateX(0deg) translateZ(0);

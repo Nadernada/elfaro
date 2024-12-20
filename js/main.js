@@ -79,7 +79,7 @@
     });
     // presentation carousel
     $(".presentation-carousel").owlCarousel({
-        autoplay: false,
+        autoplay: true,
         smartSpeed: 1000,
         center: true,
         dots: false,

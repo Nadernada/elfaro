@@ -153,7 +153,7 @@
 @media (max-width: 768px) {
     #header-carousel .carousel-item {
         position: relative;
-        min-height: 450px;
+        /* min-height: 450px; */
     }
     
     #header-carousel .carousel-item img {
@@ -702,4 +702,20 @@
   min-width: 100%;
   width: unset !important;
   justify-self: center;
+}
+
+.three-logos {
+  width: 130px;
+  position: static !important;
+}
+
+@media only screen and (max-width: 796px) {
+  .three-logos {
+    width: 20% !important;
+    height: auto !important;
+  }
+
+  .carousel-item.active {
+    min-height: 100vh;
+  }
 }

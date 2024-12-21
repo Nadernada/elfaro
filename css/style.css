@@ -743,3 +743,8 @@
     height: 130vh;
   }
 }
+
+.carousel-item.active {
+  min-height: 100vh;
+  height: 150vh;
+}

@@ -166,6 +166,10 @@
     .psych-container {
       width: 100% !important;
     }
+
+    .flex-cont  {
+      flex-direction: column !important;
+    }
 }
 
 .page-header {

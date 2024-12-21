@@ -209,7 +209,7 @@ body {
 }
 
 .psych-img {
-  aspect-ratio: 1/1;
+  min-width: 100%;
 }
 
 @keyframes lightRay {

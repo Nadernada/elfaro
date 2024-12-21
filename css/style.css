@@ -165,11 +165,20 @@
 
     .psych-container {
       width: 100% !important;
+      height: 100% !important;
     }
 
     .flex-cont  {
       flex-direction: column !important;
     }
+
+    .max-h {
+      max-height: unset;
+    }
+}
+
+.max-h {
+  max-height: 450px;
 }
 
 .page-header {
@@ -703,6 +712,12 @@
   50% {
     transform: translateX(-34.3%);
   }
+}
+
+
+.psych-container {
+  /* width: 100% !important; */
+  height: 100% !important;
 }
 
 

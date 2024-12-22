@@ -743,3 +743,11 @@
     height: 130vh;
   }
 }
+
+@media only screen and (max-height: 860px) {
+  .carousel-item.active {
+    min-height: 100vh;
+    height: 145vh;
+  }
+}
+

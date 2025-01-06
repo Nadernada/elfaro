@@ -749,6 +749,17 @@
   }
 }
 
+@media only screen and (min-height: 460px) {
+
+  .banner-logo {
+    margin-bottom: 2rem;
+  }
+
+  .hero-content {
+    margin-top: 12rem !important;
+  }
+}
+
 @media only screen and (max-height: 860px) {
   .carousel-item.active {
     min-height: 100vh;
@@ -756,7 +767,7 @@
   }
 
   .banner-logo {
-    margin-bottom: unset;
+    margin-bottom: 6rem;
   }
 }
 
@@ -789,4 +800,10 @@
 
 .banner-logo {
   margin-bottom: 17rem;
+}
+
+.logo-bg {
+  background-color: white;
+  border-radius: 6px;
+  width: fit-content;
 }

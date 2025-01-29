@@ -3,7 +3,7 @@
   src:url("../Halwa Regular.otf");
 }
 
-.elvis-font {
+.elvis-font, .nav-item {
   font-family: 'Elvis' !important;
 }
 

@@ -8,7 +8,9 @@
 }
 
 .carousel-item > img {
-  height: 105vh !important;
+  min-height: 105vh !important;
+  height: -webkit-fill-available;
+
 }
 
 /********** Template CSS **********/
@@ -773,7 +775,7 @@
   }
 }
 
-@media only screen and (max-height: 860px) {
+@media only screen and (max-height: 1060px) {
   .carousel-item.active {
     min-height: 100vh;
     height: 145vh;

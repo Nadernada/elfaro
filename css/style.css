@@ -748,6 +748,16 @@
   position: static !important;
 }
 
+.ascindades {
+  width: 200px;
+  height: fit-content;
+  position: static !important;
+}
+
+.asinidades {
+  width: 120px !important;
+}
+
 @media only screen and (max-width: 796px) {
   .three-logos {
     width: 20% !important;

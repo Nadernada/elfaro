@@ -1,3 +1,16 @@
+@font-face {
+  font-family: Elvis;
+  src:url("../Halwa Regular.otf");
+}
+
+.elvis-font {
+  font-family: 'Elvis' !important;
+}
+
+.carousel-item > img {
+  min-height: 105vh;
+}
+
 /********** Template CSS **********/
 :root {
     --primary: #843437;

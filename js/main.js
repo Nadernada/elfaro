@@ -80,7 +80,7 @@
     // presentation carousel
     $(".presentation-carousel").owlCarousel({
         autoplay: true,
-        smartSpeed: 1000,
+        smartSpeed: 100,
         center: true,
         dots: false,
         loop: true,

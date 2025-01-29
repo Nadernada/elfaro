@@ -77,10 +77,29 @@
             }
         }
     });
+
+    // Testimonials carousel
+    $(".hero-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 4000,
+        center: true,
+        dots: false,
+        loop: true,
+        nav : true,
+        navText : [
+            '<i class="bi bi-arrow-left"></i>',
+            '<i class="bi bi-arrow-right"></i>'
+        ],
+        responsive: {
+            0:{
+                items:1
+            }
+        }
+    });
     // presentation carousel
     $(".presentation-carousel").owlCarousel({
         autoplay: true,
-        smartSpeed: 1200,
+        smartSpeed: 1000,
         center: true,
         dots: false,
         loop: true,
